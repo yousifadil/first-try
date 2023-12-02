@@ -10,7 +10,7 @@ void exe_command(const char *command)
 
 	if (pidd == -1)
 	{
-		printf("forking error. \n");
+		perror("forking error. \n");
 		exit(EXIT_FAILURE);
 	}
 	else if (pidd == 0) 
@@ -29,9 +29,11 @@ void exe_command(const char *command)
 
 		/*executing*/
 
-		execvp(args[0], args);
-		printf("executing error \n");
-		exit(EXIT_FAILURE);
+		if (execvp(args[0], args) == -1)
+		{	
+			perror("executing error \n");
+			exit(EXIT_FAILURE);
+		}
 
 	}
 	
