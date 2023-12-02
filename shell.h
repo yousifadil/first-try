@@ -10,6 +10,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
 /**
  *Functions

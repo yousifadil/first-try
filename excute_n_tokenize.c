@@ -29,9 +29,9 @@ void exe_command(const char *command)
 
 		/*executing*/
 
-	execvp(args[0], args);
-	printf("executing error \n");
-	exit(EXIT_FAILURE);
+		execvp(args[0], args);
+		printf("executing error \n");
+		exit(EXIT_FAILURE);
 
 	}
 	
