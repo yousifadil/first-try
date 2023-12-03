@@ -1,6 +1,6 @@
 extern char **environ;  // Access the current environment variables
 
-void exe_command(const char *command) {
+void exe_commands(const char *command) {
     pid_t pid = fork();
 
     if (pid == -1) {
