@@ -19,7 +19,7 @@
 
 void show_prompt(void);
 void check_commands(char *command, size_t size);
-void exe_commands(const char *command);
+void exe_commands(const char *command, char *args[]);
 
 
 

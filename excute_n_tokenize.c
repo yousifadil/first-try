@@ -4,7 +4,7 @@
  * executes and tokenizes the commands
  */
 
-void exe_commands(const char *command)
+void exe_commands(const char *command, char *args[])
 {
         pid_t pidd = fork();
 
