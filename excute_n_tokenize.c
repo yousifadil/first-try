@@ -32,4 +32,4 @@ void exe_commands(const char *command) {
     } else {
         wait(NULL);
     }
-}}
+}
