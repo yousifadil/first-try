@@ -42,5 +42,3 @@ void exe_commands(const char *command)
                 wait(NULL);
         }
 }
-~
-
