@@ -1,3 +1,5 @@
+#include "shell.h"
+
 extern char **environ;  // Access the current environment variables
 
 void exe_commands(const char *command) {
