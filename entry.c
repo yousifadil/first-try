@@ -15,7 +15,7 @@ int main(void)
 	while (true) {
 		show_prompt();
 		check_commands(command, sizeof(command));
-		exe_commands(const char *command, char *args[]);
+		exe_commands(command, char *args);
 	}
 	
 	return 0;
