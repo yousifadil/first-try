@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * shows the prompt
+ * show_prompt - prints prompt text
  */
 
-void show_prompt(void) 
+void show_prompt(void)
 {
-	printf("$YousifIsTheGreatest : ");
+	printf("$ ");
 }
